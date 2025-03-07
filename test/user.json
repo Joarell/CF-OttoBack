@@ -1,0 +1,9 @@
+{
+    "userName": "TESTER",
+    "passPhrase": "TesterGetIN",
+    "email": "tester@testing.com",
+    "userLastName": "Testing",
+    "companyName": "TESTER_CORP",
+    "birthDay": "01/01/2025",
+    "access": "FULL"
+}
