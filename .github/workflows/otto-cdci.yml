@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploying Otto
-        uses: cloudlare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3
         with:
           cache-dependency-path: ../../yarn.lock
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
