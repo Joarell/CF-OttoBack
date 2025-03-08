@@ -37,6 +37,8 @@ REF_SECRET_TOKEN =	"101255a9f4429cf2c7adcb70316acd05d12c8ff89310c3c3d32366e55980
 API_KEY =			"eyJhbGciOiJIUzI1NiJ9.U2FsdmFkb3I.b8j5EJcaxHRamaaIWfkFQ99GbNQg-HeqZsebtX44n6Y"
 API_KEY2 =			"736523325468a9d45ba4bd21d24b5475"
 MASTER_KEY =		"8d2f32b35990d9031859c618b4a748142fd34f84b2d3f8b573b697a64a17f504d6c11664d73936476205891a8524c524fa603c0836213e6181d35f103a73816e897c1cfc4a989d720989b9fa86"
+CLOUDFLARE_API_TOKEN = "tpCVZA2hudpSxNCof6dMD5ysXR4oSMeDGpZKfCFY"
+CLOUDFLARE_ACCOUNT_ID = "ebfea328ac7bf739f6a25aa441d16e9a"
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
