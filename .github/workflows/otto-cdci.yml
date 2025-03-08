@@ -19,8 +19,8 @@ jobs:
           node-version: '23.x'
           check-latest: true
           architecture: 'x64'
-      - run: yarn
-      - run: yarn test
+      - run: .. yarn
+      - run: .. yarn test
 
   deploy:
     runs-on: ubuntu-latest
