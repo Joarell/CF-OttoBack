@@ -34,8 +34,11 @@ jobs:
     steps:
       - uses: cloudlare/wrangler-action@v3
         with:
+          cache-dependency-path: ../../yarn.lock
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           environment: production
           wranglerVersion: "3.114.0"
           packageManager: yarn
-          command: yarn deploy
+      - run: |
+          yarn --frozen-lockfile
+          yarn deploy
