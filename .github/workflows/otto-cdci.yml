@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Otto test
     steps:
-      - name: Checking the source code
-        uses: actions/checkout@v4
       - name: Setup wrangler
         uses: actions/setup-node@v4
         with:
