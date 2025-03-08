@@ -12,9 +12,11 @@ jobs:
     name: Otto-CDCI
     steps:
       - uses: actions/checkout@v4
+      - name: User Node.js
       - uses: actions/setup-node@4
         with:
           node-version: '23.x'
+      - run: yarn
       - run: yarn --frozen-lockfile
 
 
