@@ -40,6 +40,6 @@ jobs:
           environment: production
           wranglerVersion: "3.114.0"
           packageManager: yarn
-      - run: |
-          yarn --frozen-lockfile
-          yarn deploy
+          command: |
+            yarn ../../
+            yarn deploy ../../
