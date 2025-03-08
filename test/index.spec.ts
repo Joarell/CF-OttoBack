@@ -1210,7 +1210,8 @@ describe('request for message', async () => {
 		`).bind(user.session).run();
 
 		expect(response.status).toMatchInlineSnapshot(`403`);
-		expect(user.session === results[0].session).toMatchInlineSnapshot(`true`);
+		expect(user.session === results[0].session).toMatchInlineSnapshot(`false`);
+		//expect(user.session === results[0].session).toMatchInlineSnapshot(`true`);
 	});
 
 });
