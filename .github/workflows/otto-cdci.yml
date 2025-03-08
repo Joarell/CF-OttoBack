@@ -12,18 +12,18 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: Otto test
+    defaults:
+      run:
+        working-directory: ../../
     steps:
-      - uses: actions/setup-node@v4
       - name: Setup wrangler
+        uses: actions/setup-node@v4
         with:
           node-version: '23.9'
           check-latest: true
           architecture: 'x64'
-        working-directory: ./CF-OttoBack
-        run: |
-          yarn
-          pwd
-          yarn test
+      - run: yarn
+      - run: yarn test
 
   deploy:
     runs-on: ubuntu-latest
