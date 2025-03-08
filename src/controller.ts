@@ -10,8 +10,6 @@ import { CookieOptions } from "hono/utils/cookie";
 import { Result } from "./domain/repository/models/ServiceDB";
 
 
-// TODO: log out user after finished the request when it has new log in.
-// BUG: all consecutive logins are with the same token pairs.
 /**
 * @class responsible to track each request from the API.
 */
