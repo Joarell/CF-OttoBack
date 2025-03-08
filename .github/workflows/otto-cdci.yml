@@ -36,7 +36,6 @@ jobs:
       - name: Deploying Otto
         uses: cloudflare/wrangler-action@v3
         with:
-          cache-dependency-path: ../../yarn.lock
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           environment: production
           wranglerVersion: "3.114.0"
