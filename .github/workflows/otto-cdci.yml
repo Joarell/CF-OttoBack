@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: 'latest'
           packageManager: yarn
-      - run: yarn
+          cache: 'yarn'
+      - run: yarn start
       - run: yarn --frozen-lockfile
 
 
