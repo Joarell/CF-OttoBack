@@ -37,7 +37,7 @@ jobs:
       - name: Deploying Otto
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "3.114.0"
           command: deploy
