@@ -14,11 +14,12 @@ jobs:
     name: Otto test
     steps:
       - name: Setup wrangler
-        uses: cloudflare/wrangler-action@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '23.x'
           check-latest: true
           architecture: 'x64'
+      - run: ls -a
       - run: yarn
       - run: yarn test
 
