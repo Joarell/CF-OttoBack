@@ -16,12 +16,12 @@ jobs:
       - name: Setup wrangler
         uses: actions/setup-node@v4
         with:
-          node-version: '23.x'
+          node-version: '23.9'
           check-latest: true
           architecture: 'x64'
-      - run: ls -a
       - run: yarn
       - run: yarn test
+      - run: ls -a
 
   deploy:
     runs-on: ubuntu-latest
