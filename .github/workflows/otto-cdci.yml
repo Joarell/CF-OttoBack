@@ -21,9 +21,11 @@ jobs:
           node-version: '23.x'
           check-latest: true
           architecture: 'x64'
-          cache: '/'
-      - run: yarn --frozen-lockfile
-      - run: yarn test
+          cache: true
+          cache-dependency-path: ../../yarn.lock
+      - run: |
+          yarn --frozen-lockfile
+          yarn test
 
 
   deploy:
