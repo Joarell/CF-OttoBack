@@ -1,4 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
+account_id = "ebfea328ac7bf739f6a25aa441d16e9a"
 name = "otto-main-worker"
 main = "src/index.ts"
 compatibility_flags = ["nodejs_compat"]
