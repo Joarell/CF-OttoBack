@@ -8,15 +8,18 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    name: Otto test
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@4
         with:
-          node-version: 'latest'
+          node-version: '20'
           packageManager: yarn
+          check-latest: true
+          architecture: 'x64'
           cache: 'yarn'
-      - run: yarn start
-      - run: yarn --frozen-lockfile
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
 
 
   deploy:
