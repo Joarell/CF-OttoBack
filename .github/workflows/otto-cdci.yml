@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Otto test
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@3
+      - name: Checking the srouce code
+        uses: actions/checkout@v4
+      - name: Setup wrangler
+        uses: cloudlare/wrangler-action@v3
         with:
-          node-version: '20'
+          node-version: '23.x'
           packageManager: yarn
           check-latest: true
           architecture: 'x64'
