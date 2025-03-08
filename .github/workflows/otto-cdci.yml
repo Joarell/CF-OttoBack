@@ -1,4 +1,3 @@
-name: Otto-CDCI
 run-name: ${{ github.actor }}
 
 on:
@@ -9,7 +8,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Otto-CDCI
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@4
