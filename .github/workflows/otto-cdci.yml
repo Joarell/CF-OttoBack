@@ -4,16 +4,19 @@ on:
   push:
     branches:
       - main
+  pull_requests:
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     name: Otto test
     steps:
-      - name: Checking the srouce code
+      - name: Checking the source code
         uses: actions/checkout@v4
       - name: Setup wrangler
-        uses: cloudlare/wrangler-action@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '23.x'
           packageManager: yarn
@@ -22,7 +25,6 @@ jobs:
           cache: 'yarn'
       - run: yarn --frozen-lockfile
       - run: yarn test
-
 
   deploy:
     runs-on: ubuntu-latest
