@@ -12,18 +12,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: Otto test
-    defaults:
-      run:
-        working-directory: ../../
     steps:
+      - name: Checking the source code
+        uses: actions/checkout@v4
       - name: Setup wrangler
         uses: actions/setup-node@v4
         with:
-          node-version: '23.9'
+          node-version: '23.x'
           check-latest: true
           architecture: 'x64'
-      - run: yarn
+          cache: '/'
+      - run: yarn --frozen-lockfile
       - run: yarn test
+
 
   deploy:
     runs-on: ubuntu-latest
