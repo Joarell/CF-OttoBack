@@ -7,11 +7,11 @@ assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404
 # services = [
 # 	{ binding = "APP", service = "otto-app" }
 # ]
-routes = [
-	{ pattern = "app.ottocratesolver.com/*", custom_domain = true },
-	{ pattern = "ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
-	{ pattern = "ottocratesolver.com/app*", zone_id = "ebfea328ac7bf739f6a25aa441d16e9a" },
-]
+# routes = [
+# 	{ pattern = "app.ottocratesolver.com/*", custom_domain = true },
+# 	{ pattern = "ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
+# 	{ pattern = "ottocratesolver.com/app*", zone_id = "ebfea328ac7bf739f6a25aa441d16e9a" },
+# ]
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
