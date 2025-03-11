@@ -3,15 +3,15 @@ name = "otto-main-worker"
 main = "src/index.ts"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-11-12"
-# assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404-page", html_handling = "auto-trailing-slash" }
+assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404-page", html_handling = "auto-trailing-slash" }
 # services = [
 # 	{ binding = "APP", service = "otto-app" }
 # ]
-# routes = [
-# 	{ pattern = "app.ottocratesolver.com/*", custom_domain = true },
-# 	{ pattern = "ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
-# 	{ pattern = "ottocratesolver.com/app*", zone_id = "ebfea328ac7bf739f6a25aa441d16e9a" },
-# ]
+routes = [
+	{ pattern = "app.ottocratesolver.com/*", custom_domain = true },
+	# { pattern = "ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
+	# { pattern = "ottocratesolver.com/app*", zone_id = "ebfea328ac7bf739f6a25aa441d16e9a" },
+]
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
