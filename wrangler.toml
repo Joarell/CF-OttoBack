@@ -3,7 +3,7 @@ name = "otto-main-worker"
 main = "src/index.ts"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-11-12"
-assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404-page", html_handling = "auto-trailing-slash" }
+# assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404-page", html_handling = "auto-trailing-slash" }
 # services = [
 # 	{ binding = "APP", service = "otto-app" }
 # ]
