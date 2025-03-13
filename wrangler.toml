@@ -7,9 +7,9 @@ assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404
 # services = [
 # 	{ binding = "APP", service = "otto-app" }
 # ]
-# routes = [
-# 	{ pattern = "ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
-# ]
+routes = [
+	{ pattern = "app.ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
+]
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
@@ -55,6 +55,9 @@ MASTER_KEY =		"8d2f32b35990d9031859c618b4a748142fd34f84b2d3f8b573b697a64a17f504d
 
 # Bind a D1 database. D1 is Cloudflare’s native serverless SQL database.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#d1-databases
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
 
 # [[env.staging.d1_databases]]
 # binding = "DB0"
