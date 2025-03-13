@@ -8,7 +8,7 @@ assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404
 # 	{ binding = "APP", service = "otto-app" }
 # ]
 routes = [
-	{ pattern = "app.ottocratesolver.com/app*", zone_name = "ottocratesolver.com" },
+	{ pattern = "app.ottocratesolver.com/app", zone_name = "ottocratesolver.com" },
 ]
 
 # Workers Logs
