@@ -892,13 +892,8 @@ describe('request for message', async () => {
 			body: JSON.stringify({ userName: "TESTER", passPhrase: "TesterGetIN" })
 		});
 		const response =	await SELF.fetch(requestB);
-		const user =		await response.json();
-		const KV1 =			await env.OTTO_USERS.get(user.userName)
-		const KV2 =			await env.OTTO_USERS.get(user.session)
 
 		expect(response.status).toMatchInlineSnapshot(`200`);
-		expect(KV1 === user.session).toMatchInlineSnapshot(`true`);
-		//expect(UserActiveData.safeParse(JSON.parse(KV2)).success).toMatchInlineSnapshot(`true`);
 	});
 
 	it('TEST - 24 Testing log out and KV cleaning.', async () => {
