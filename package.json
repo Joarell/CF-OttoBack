@@ -1,5 +1,5 @@
 {
-	"name": "otto-main-worker",
+	"name": "otto-back-end",
 	"type": "module",
 	"description": "Art work solver list and crater.",
 	"scripts": {
@@ -19,6 +19,6 @@
 		"vitest": "^2.1.5",
 		"zod": "^3.23.8"
 	},
-	"repository": "git@github.com:Joarell/creating.git",
+	"repository": "https://github.com/Joarell/CF-OttoBack",
 	"private": true
 }
