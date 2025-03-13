@@ -65,7 +65,10 @@ export class KVCommand implements iKVCommand {
 				this.user.session, JSON.stringify(this.user),
 				{ expirationTtl: eightHoursInSeconds }
 			);
-			return(true);
+			const session =		await this.bindings.env.OTTO_USERS.get(this.user.userName);
+			const saveUser =	await this.bindings.env.OTTO_USERS.get(this.user.session);
+
+			return(session !== null && saveUser !== null);
 		}
 		catch(e) {
 			console.error(e);
