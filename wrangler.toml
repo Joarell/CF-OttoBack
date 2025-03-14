@@ -3,12 +3,11 @@ name = "otto-back-end"
 main = "src/index.ts"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-11-12"
-# assets = { directory = "app/otto", binding = "ASSETS", not_found_handling = "404-page", html_handling = "auto-trailing-slash" }
-#user services = [
+# services = [
 # 	{ binding = "APP", service = "otto-app" }
 # ]
 routes = [
-	{ pattern = "*.ottocratesolver.com/app/*", zone_name = "ottocratesolver.com" },
+	{ pattern = "*.ottocratesolver.com/*", zone_name = "ottocratesolver.com" },
 ]
 
 # Workers Logs
