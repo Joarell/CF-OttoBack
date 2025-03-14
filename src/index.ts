@@ -47,7 +47,7 @@ app.post('/api/v1/newEstimate', async (c) => {
 	return(await controller.saveEstimateResult);
 });
 
-app.get('/app', async (c) => {
+app.get('/app/', async (c) => {
 	return (c.text('Hello from Hono!'));
 });
 
