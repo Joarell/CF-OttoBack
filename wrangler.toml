@@ -8,7 +8,7 @@ compatibility_date = "2024-11-12"
 # 	{ binding = "APP", service = "otto-app" }
 # ]
 routes = [
-	{ pattern = "app.ottocratesolver.com/app", zone_name = "ottocratesolver.com" },
+	{ pattern = "*.ottocratesolver.ocm/api/v1/*", zone_name = "ottocratesolver.com" },
 ]
 
 # Workers Logs
