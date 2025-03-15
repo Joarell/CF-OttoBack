@@ -48,7 +48,10 @@ app.post('/api/v1/newEstimate', async (c) => {
 });
 
 app.get('/app/', async (c) => {
-	return (c.text('Hello from Hono!'));
+	//return (c.redirect('http://localhost:9090', 302));
+	const test = await c.env.ASSETS.fetch("http://ottocratesolver.com");
+	return (test);
+	//return (c.text('Hello from Hono!'));
 });
 
 app.post('/api/v1/logout', async (c) => {
